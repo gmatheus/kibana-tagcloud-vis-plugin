@@ -1,0 +1,9 @@
+<div ng-controller="TagcloudVisController" class="tagcloud">
+  <span class="tag"
+    ng-repeat="tag in tags"
+    ng-style="{'font-size': tag.size + 'px'}"
+    ng-click="filter(tag)"
+  >
+    {{tag.label}}
+  </span>
+</div>
